@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+<!--face displayer-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="50">
+
+        <SurfaceView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    </LinearLayout>
+
+
+    <!--color text and seekbars-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/redText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Red"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+
+                />
+
+            <TextView
+                android:id="@+id/greenText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Green"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+
+
+                />
+
+
+
+            <TextView
+                android:id="@+id/blueText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blue"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:paddingBottom="10dp"
+
+
+                />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="454dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:orientation="vertical">
+
+            <SeekBar
+                android:id="@+id/red"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="255"
+                android:min="0"
+                android:paddingTop="6dp"
+                android:paddingBottom="22dp" />
+
+            <SeekBar
+                android:id="@+id/green"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="255"
+                android:min="0"
+                android:paddingBottom="20dp" />
+
+            <SeekBar
+                android:id="@+id/blue"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:max="255"
+                android:min="0"
+                android:paddingBottom="22dp" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--help from stack overflow-->
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/hairs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#1A99C4"
+                    android:layout_marginLeft="0dp"
+                    android:text="Hair"
+                    android:layout_weight="1" />
+
+                <RadioButton
+                    android:id="@+id/eyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#1A99C4"
+                    android:layout_weight="1"
+                    android:text="Eyes" />
+
+                <RadioButton
+                    android:id="@+id/skins"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:buttonTint="#1A99C4"
+                    android:layout_weight="1"
+                    android:text="Skin" />
+
+            </RadioGroup>
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <!--help from stack overflow-->
+
+            <Spinner
+                android:id="@+id/hairSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/hairs"
+                android:paddingTop="10dp"
+                android:paddingBottom="20dp"
+                ></Spinner>
+
+            <Button
+                android:id="@+id/randomFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Random Face"
+
+                ></Button>
+
+
+        </LinearLayout>
+
+
+</LinearLayout>
+
+</LinearLayout>

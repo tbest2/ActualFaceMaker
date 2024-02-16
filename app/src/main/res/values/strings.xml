@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Actual Face Maker</string>
+
+<!--taken from stack overflow-->
+    <string-array name="hairs">
+        <item>Hair1</item>
+        <item>Hair2</item>
+        <item>Hair3</item>
+    </string-array>
+
+</resources>

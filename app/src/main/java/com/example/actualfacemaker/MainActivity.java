@@ -6,9 +6,12 @@ import android.annotation.SuppressLint;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.RadioGroup;
 import android.widget.SeekBar;
 import android.view.View;
+import android.widget.Spinner;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -34,6 +37,10 @@ Button randomFace;
         randomFace = findViewById(R.id.randomFace);
         randomFace.setOnClickListener(robert);
 
+        Spinner hairStyle = findViewById(R.id.hairSpinner);
+        hairStyle.setOnItemSelectedListener(robert);
+
+
         SeekBar red = findViewById(R.id.red);
         red.setOnSeekBarChangeListener(robert);
 
@@ -42,6 +49,9 @@ Button randomFace;
 
         SeekBar green = findViewById(R.id.green);
         green.setOnSeekBarChangeListener(robert);
+
+        RadioGroup radioGroup = findViewById(R.id.radioGroup);
+        radioGroup.setOnCheckedChangeListener(robert);
 
         bob.setOnTouchListener(robert);
     }

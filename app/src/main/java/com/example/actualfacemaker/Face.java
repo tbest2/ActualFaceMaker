@@ -15,9 +15,18 @@ public class Face {
 
 
 
-    int skinColor;
-    int eyeColor;
-    int hairColor;
+    int skinColorRed;
+    int skinColorBlue;
+    int skinColorGreen;
+
+    int eyeColorRed;
+    int eyeColorBlue;
+    int eyeColorGreen;
+
+    int hairColorRed;
+    int hairColorBlue;
+    int hairColorGreen;
+
     int hairStyle;
     int redNow;
     int blueNow;
@@ -25,36 +34,59 @@ public class Face {
 
     Random gen = new Random();
     Face(){
-        int skinColorRed = gen.nextInt(255);
-        int skinColorBlue = gen.nextInt(255);
-        int skinColorGreen = gen.nextInt(255);
+        skinColorRed = gen.nextInt(255);
+        skinColorBlue = gen.nextInt(255);
+        skinColorGreen = gen.nextInt(255);
 
-        int eyeColorRed = gen.nextInt(255);
-        int eyeColorBlue = gen.nextInt(255);
-        int eyeColorGreen = gen.nextInt(255);
+        eyeColorRed = gen.nextInt(255);
+        eyeColorBlue = gen.nextInt(255);
+        eyeColorGreen = gen.nextInt(255);
 
-        int hairColorRed = gen.nextInt(255);
-        int hairColorBlue = gen.nextInt(255);
-        int hairColorGreen = gen.nextInt(255);
+        hairColorRed = gen.nextInt(255);
+        hairColorBlue = gen.nextInt(255);
+       hairColorGreen = gen.nextInt(255);
 
-        int hairStyle = gen.nextInt(3) + 1;
+        hairStyle = gen.nextInt(3) + 1;
     }
 
-    void onDraw(Canvas c){
+    void randomizer(){
+
+            skinColorRed = gen.nextInt(255);
+           skinColorBlue = gen.nextInt(255);
+           skinColorGreen = gen.nextInt(255);
+
+           eyeColorRed = gen.nextInt(255);
+           eyeColorBlue = gen.nextInt(255);
+           eyeColorGreen = gen.nextInt(255);
+
+            hairColorRed = gen.nextInt(255);
+            hairColorBlue = gen.nextInt(255);
+            hairColorGreen = gen.nextInt(255);
+
+            hairStyle = gen.nextInt(3) + 1;
 
     }
 
-    int getSkin(){
-        return skinColor;
+    void updateSkin(){
+        skinColorRed = redNow;
+        skinColorBlue = blueNow;
+        skinColorGreen = greenNow;
     }
 
-    int getEye(){
-        return eyeColor;
+    void updateHair(){
+        hairColorRed = redNow;
+        hairColorBlue = blueNow;
+        hairColorGreen = greenNow;
     }
 
-    int getHairC(){
-        return hairColor;
+    void updateEyes(){
+        eyeColorRed = redNow;
+        eyeColorBlue = blueNow;
+        eyeColorGreen = greenNow;
     }
+
+
+
 
     int getHairS(){
         return hairStyle;

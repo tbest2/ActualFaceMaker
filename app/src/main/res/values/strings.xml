@@ -3,9 +3,9 @@
 
 <!--taken from stack overflow-->
     <string-array name="hairs">
-        <item>Hair1</item>
-        <item>Hair2</item>
-        <item>Hair3</item>
+        <item>bald</item>
+        <item>short</item>
+        <item>long</item>
     </string-array>
 
 </resources>

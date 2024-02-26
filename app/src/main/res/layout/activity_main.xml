@@ -15,7 +15,8 @@
         android:orientation="horizontal"
         android:layout_weight="50">
 
-        <SurfaceView
+        <com.example.actualfacemaker.FaceView
+            android:id="@+id/faceView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
@@ -40,7 +41,7 @@
                 android:id="@+id/redText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Red"
+                android:text="Red    "
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:layout_marginLeft="10dp"
@@ -52,7 +53,7 @@
                 android:id="@+id/greenText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Green"
+                android:text="Green    "
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:layout_marginLeft="10dp"
@@ -67,7 +68,7 @@
                 android:id="@+id/blueText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Blue"
+                android:text="Blue    "
                 android:textColor="@color/black"
                 android:textSize="20dp"
                 android:layout_marginLeft="10dp"
@@ -129,6 +130,7 @@
             <!--help from stack overflow-->
 
             <RadioGroup
+                android:id="@+id/radioGroup"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">

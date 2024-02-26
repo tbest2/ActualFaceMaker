@@ -67,6 +67,7 @@ public class Face {
 
     }
 
+    //m is mode from face controller to indicate hair, eyes, or skin
     int getRed(int m){
         if (m == 1){
             return hairColorRed;

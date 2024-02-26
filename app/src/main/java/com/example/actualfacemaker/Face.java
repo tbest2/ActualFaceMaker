@@ -67,30 +67,34 @@ public class Face {
 
     }
 
-    void updateSkin(){
-        skinColorRed = redNow;
-        skinColorBlue = blueNow;
-        skinColorGreen = greenNow;
+    int getRed(int m){
+        if (m == 1){
+            return hairColorRed;
+        } else if (m == 2){
+            return eyeColorRed;
+        } else
+            return skinColorRed;
+        }
+    int getBlue(int m){
+        if (m == 1){
+            return hairColorBlue;
+        } else if (m == 2){
+            return eyeColorBlue;
+        } else
+            return skinColorBlue;
     }
 
-    void updateHair(){
-        hairColorRed = redNow;
-        hairColorBlue = blueNow;
-        hairColorGreen = greenNow;
-    }
-
-    void updateEyes(){
-        eyeColorRed = redNow;
-        eyeColorBlue = blueNow;
-        eyeColorGreen = greenNow;
+    int getGreen(int m) {
+        if (m == 1) {
+            return hairColorGreen;
+        } else if (m == 2) {
+            return eyeColorGreen;
+        } else
+            return skinColorGreen;
     }
 
 
 
-
-    int getHairS(){
-        return hairStyle;
-    }
 }
 
 

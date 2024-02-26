@@ -32,7 +32,12 @@ Button randomFace;
         setContentView(R.layout.activity_main);
 
         bob = findViewById(R.id.faceView);
-        FaceController robert = new FaceController(bob);
+
+        SeekBar red = findViewById(R.id.red);
+        SeekBar blue = findViewById(R.id.blue);
+        SeekBar green = findViewById(R.id.green);
+
+        FaceController robert = new FaceController(bob, this);
 
         randomFace = findViewById(R.id.randomFace);
         randomFace.setOnClickListener(robert);
@@ -41,13 +46,8 @@ Button randomFace;
         hairStyle.setOnItemSelectedListener(robert);
 
 
-        SeekBar red = findViewById(R.id.red);
         red.setOnSeekBarChangeListener(robert);
-
-        SeekBar blue = findViewById(R.id.blue);
         blue.setOnSeekBarChangeListener(robert);
-
-        SeekBar green = findViewById(R.id.green);
         green.setOnSeekBarChangeListener(robert);
 
         RadioGroup radioGroup = findViewById(R.id.radioGroup);
@@ -55,8 +55,10 @@ Button randomFace;
 
         bob.setOnTouchListener(robert);
 
+        }
 
-    }
+
+
 
 
 
